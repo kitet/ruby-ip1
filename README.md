@@ -1,6 +1,6 @@
 ## Word Occurence Counter
 ###### MC3 Ruby IP1
-###### [VIEW DEMO](https://still-woodland-15860.herokuapp.com)
+###### [VIEW DEMO](https://young-wave-61421.herokuapp.com/)
 
 ## Description
 Website to check number of occurence of a word in a string user inputs
