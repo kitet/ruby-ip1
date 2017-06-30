@@ -4,7 +4,8 @@ class CountOccurence
 		tocheck=Regexp::new(word)
 		string.gsub(/\s+/, " ")
 		string.split(" ").each do |item|
-			tocheck=~item ? count+=1: "Invalid
+			item=~/\b#{item}\b/ ? count+=1: "do not match"
 		end
+		count
 	end
 end
