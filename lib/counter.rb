@@ -1,4 +1,7 @@
 class CountOccurence
+	def initialize
+
+	end
 	def countWord(word,string)
 		# if word.length>(0) && string.length>(0)
 			noofoccurence=0

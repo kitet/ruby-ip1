@@ -4,8 +4,10 @@ require './lib/counter'
 also_reload('lib/**/*.rb')
 
 get('/') do
-	@wordn=params.fetch('word')
-	@stringn=params.fetch('string')
-	#@results= CountOccurence.countWord(word, string)
+	@myword = params['word']
+	@mystring=params['string']
+	mycounter=CountOccurence.new
+	results= mycounter.countWord({myword},{mystring})
+	params['result']=results
 	erb(:index)
 end

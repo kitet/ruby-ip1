@@ -1,16 +1,15 @@
 <div class="container">
 	<div class="row">
-		<form class="form-group" action="/index">
+		<form class="form-group" action="/">
 			<label>Word to Search Count</label>
-			<input class=form-control type="text" value="" name="word" placeholder="enter one word here">
+			<input required class=form-control type="text" value="" name="word" placeholder="enter one word here">
 			<label>Haystack to search through</label>
-			<input class=form-control type="text" value="" name="string" placeholder="enter a long string to search through">
+			<input required class=form-control type="text" value="" name="string" placeholder="enter a long string to search through">
 			<button type="submit" class="btn btn-success">Search</button>
 		</form>
 	</div>
 	<div>
 		<h1 class='text-primary'>Results:</h1>
-		<p class="text-success">		
-		</p>
+		<h3></h3>
 	</div>
 </div>
