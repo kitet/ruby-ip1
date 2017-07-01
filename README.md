@@ -22,7 +22,7 @@ In your Terminal:
  - Ruby v2.4.1
  - Bootstrap
  - HTML5
- - Gems: rspec, sinatra , sinatra-contrib
+ - RubyGems: rspec, sinatra , sinatra-contrib
 
 ## LICENSE
 [Refer to the MIT Licence](../LICENSE)
