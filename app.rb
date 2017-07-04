@@ -10,11 +10,11 @@ get('/') do
 end
 
 post('/') do
-	selectvalue=params['select']
+	@selectvalue=params['select'].to_i
 	@myarray=[0,1]
 	@myword = params['word']
 	@mystring=params['string']
 	mycounter=CountOccurence.new
-	@results=mycounter.countWord(@myword, @mystring, selectvalue)
+	@results=mycounter.countWord(@myword, @mystring, @selectvalue)
 	erb :index
 end
