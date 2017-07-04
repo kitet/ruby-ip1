@@ -5,13 +5,16 @@ also_reload('lib/**/*.rb')
 
 
 get('/') do
+	@myword=""
 	erb :index
 end
 
-get('/results') do
+post('/') do
+	selectvalue=params['select']
+	@myarray=[0,1]
 	@myword = params['word']
 	@mystring=params['string']
 	mycounter=CountOccurence.new
-	@results=mycounter.countWord(@myword,@mystring);
-	erb :results
+	@results=mycounter.countWord(@myword, @mystring, selectvalue)
+	erb :index
 end

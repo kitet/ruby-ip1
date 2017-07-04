@@ -1,13 +1,24 @@
 <div class="container">
 	<div class="row">
+		<div class="row">
+			
+		</div>
 		<div class="col-md-7">
-			<form class="form-group" action="/results">
+			<form method="post" class="form-group" action="/">
+				<select name="select">
+					<option value="0">Mode A</option>
+					<option value="1">Mode B</option>
+				</select>
 				<label>Word to Search Count</label>
 				<input required class=form-control type="text" value="" name="word" placeholder="enter one word here">
 				<label>Haystack to search through</label>
 				<textarea required cols="20" rows="10" class=form-control type="text" value="" name="string" placeholder="enter a long string to search through"></textarea>
 				<button id="button" type="submit" class="btn btn-success">Count</button>
 			</form>
+		</div>
+		<div class="col-md-4">
+			<h1 class="text-primary">Results:</h1>
+			<p id="results"><%= @myword %> occurs <%= @results%> times</p>
 		</div>
 	</div>
 </div>
