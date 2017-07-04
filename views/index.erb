@@ -5,10 +5,11 @@
 		</div>
 		<div class="col-md-7">
 			<form method="post" class="form-group" action="/">
-				<select name="select">
-					<option value="0">Mode A</option>
-					<option value="1">Mode B</option>
+				<select class="selectpicker" data-style="btn-primary" id='select' name="select">
+					<option id='0' value="0">Mode A</option>
+					<option id="1" value="1">Mode B</option>
 				</select>
+				<hr>
 				<label>Word to Search Count</label>
 				<input required class=form-control type="text" value="" name="word" placeholder="enter one word here">
 				<label>Haystack to search through</label>
