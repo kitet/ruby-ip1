@@ -9,10 +9,10 @@ class CountOccurence
 				if item=~/\!/
 					#do nothing
 				else
-					if selectedvalue==0
-						item=~/\b#{tocheck}\b/ ? noofoccurence+=1: "do not match"
+					if selectedvalue.eql?(0)
+						item=~/\b#{tocheck}\b/ ? noofoccurence=+1: "do not match"
 					else
-						item=~/tocheck/ ? noofoccurence+=1: "do not match"
+						item=~/#{tocheck}/ ? noofoccurence=+1: "do not match"
 					end
 				end
 			end
