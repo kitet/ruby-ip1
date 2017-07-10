@@ -18,3 +18,4 @@ post('/') do
 	@results=mycounter.countWord(@myword, @mystring, @selectvalue)
 	erb :index
 end
+
