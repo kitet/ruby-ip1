@@ -2,7 +2,7 @@ class CountOccurence
 	def countWord(word,string,selectedvalue)
 		# if word.length>(0) && string.length>(0)
 			noofoccurence=0
-			tocheck=word
+			tocheck=Regexp.new(word)
 			string.gsub(/\s+/, " ")
 			string.split(" ").each do |item|
 				#item=item.gsub(/\!/,"")
